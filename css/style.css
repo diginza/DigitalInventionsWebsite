@@ -2328,28 +2328,22 @@ blockquote {
 
 }
 
-/* By default, show image and hide h1 */
+/* By default, show h1 */
 .desktop-heading {
-    display: none;
-}
-
-.mobile-heading {
     display: block;
-    max-width: 100%;
-    height: auto;
 }
 
-/* Show h1 and hide image on larger screens */
+ 
+
+#aboutUsImage {
+    display: none; /* Hide by default */
+}
+
 @media (min-width: 768px) {
-    .desktop-heading {
-        display: block;
-    }
-
-    .mobile-heading {
-        display: none;
+    #aboutUsImage {
+        display: block; /* Show when screen is 768px or wider */
     }
 }
-
 
 
 

@@ -21,15 +21,14 @@
     <link rel="stylesheet" href="css/namari-color.css">
 
     <!--Icon Fonts - Font Awesome Icons-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
 
     <!-- Animate CSS-->
     <link href="css/animate.css" rel="stylesheet" type="text/css">
-
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <meta name="robots" content="noindex, nofollow">
+ 
 </head>
 <body>
 
@@ -76,8 +75,8 @@
                         <!--Social Icons in Header-->
                         <ul class="social-icons">
                             <li>
-                                <a target="_blank" title="Twitter" href="https://wa.me/+27609880017">
-                                    <i class="fa fa-whatsapp fa-1x"></i><span>Whatsapp</span>
+                                <a target="_blank" title="Whatsapp" href="https://wa.me/+27609880017">
+                                    <b><i class="fa fa-brands fa-whatsapp fa-1x"></i></b><span>Whatsapp</span>
                                 </a>
                             </li>
                             <li>
@@ -86,9 +85,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" title="Email" href="mailto:info@digitalinventions.co.za">
-                                    <i class="fa fa-envelope fa-1x"></i><span>Email</span>
-                                </a>
+                                <script>
+                                    const user = "info";
+                                    const domain = "digitalinventions.co.za";
+                                    const email = user + "@" + domain;
+                                    document.write('<a target="_blank" title="Email" href="mailto:' + email + '"><i class="fa fa-envelope fa-1x"></i></a>');
+                                </script>
                             </li>
                         </ul>
                         <!--End of Social Icons in Header-->
@@ -146,7 +148,7 @@
     <!--Main Content Area-->
     <main id="content">
 
-        <!--Introduction-->
+        <!--About Us-->
         <section id="about" class="introduction scrollto">
             <div class="row no-padding-bottom clearfix">
 
@@ -169,12 +171,14 @@
                     <p>
                         Digital Inventions works flexibly, drawing on a trusted network of specialist associates and partner organisations when needed. This approach allows us to stay lean and responsive, while bringing in the right expertise to meet the needs of each project.
                     </p>
-
+                    <!--Call to Action-->
+                    <a target="_blank" href="DigitalInventionsOverview.pdf" class="button">DOWNLOAD A ONE PAGE OVERVIEW</a>
+                    <!--End Call to Action-->
 
                 </div>
 
                 <div class="col-38">
-                    <img src="images/aboutus.png" alt="About Us" />
+                    <img id="aboutUsImage" src="images/aboutus.png" alt="About Us" />
                 </div>
 
 
@@ -184,7 +188,48 @@
 
 
         </section>
-        <!--End of Introduction-->
+        <!--End of About Us-->
+        <!--Our Approach-->
+        <section id="approach" class="introduction scrollto">
+            <div class="row no-padding-bottom clearfix">
+
+                <div class="col-61">
+                    <div class="section-heading">
+                        <h3>OUR APPROACH</h3>
+                        <h2 class="section-title">How we can help you</h2>
+                    </div>
+                    <p>
+                        Data is often collected primarily for funder
+                        reporting. We help organizations turn it into
+                        action so they can improve service to
+                        beneficiaries, build trust, ensure staff
+                        accountability, and drive learning.
+                    </p>
+                    <p>
+                        We do this through <b>Impact Nest</b>, a practical,
+                        no-jargon methodology for clarifying what to
+                        measure and how. For organizations ready to
+                        go further, our <b>Action Weaver platform</b> (built
+                        on Microsoft Azure) enables rapid deployment
+                        of custom data systems that work in real time.
+                    </p>
+                    <img src="images/impactnest.png" style="width:100%"/>
+
+
+                </div>
+
+                <div class="col-38">
+                    <img id="aboutUsImage" src="images/aboutus.png" alt="About Us" />
+                </div>
+
+
+            </div>
+
+
+
+
+        </section>
+        <!--End of Our Approach-->
         <!--Content Section-->
         <div id="services" class="scrollto clearfix">
 
@@ -192,11 +237,12 @@
 
                 <div class="col-3">
                     <div class="section-heading">
-                        <h3>SUCCESS</h3>
-                        <h2 class="section-title">How We Help You To Sell Your Product</h2>
-                        <p class="section-subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+                        <h3>OUR SERVICES</h3>
+                        <h2 class="section-title">How we do this</h2>
+                        <p>
+                            We turn data into a tool for action, not just compliance. Many non-profits collect data to satisfy funders, but struggle to use it for learning, improvement or decision-making. We help you close that gap by designing systems and strategies that are grounded, efficient and aligned with your mission.
+                        </p><p>
+                            Our services range from clarifying what success looks like to building real-time data systems that track progress and flag issues early. Whether you need to refine your Theory of Change, build an indicator matrix, design a data collection plan, or implement a smart dashboard, we bring a practical, user-focused approach to every step.
                         </p>
                     </div>
 
@@ -208,14 +254,13 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-html5 fa-2x"></i>
+                            <i class="fa fa-hand-holding-heart fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>HTML5 &amp; CSS3</h4>
+                            <h4>Refining your Theory of Change</h4>
                             <p>
-                                Has ne tritani atomorum conclusionemque, in dolorum volumus cotidieque eum. At vis choro
-                                neglegentur iudico
+                                We guide teams in clarifying how their work leads to impact. This involves mapping day-to-day activities to long-term social change goals through a well-articulated Theory of Change.
                             </p>
                         </div>
                     </div>
@@ -224,14 +269,15 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-bolt fa-2x"></i>
+                            <i class="fa fa-clipboard-list fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Easy to Use</h4>
+                            <h4>
+                                Building Indicator Matrices
+                            </h4>
                             <p>
-                                Cu vero ipsum vim, doctus facilisi sea in. Eam ex falli honestatis repudiandae, sit
-                                detracto mediocrem disputationi
+                                We help identify the most relevant data points, select appropriate collection methods, and develop tools that ensure data is reliable, consistent and useful.
                             </p>
                         </div>
                     </div>
@@ -240,14 +286,13 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-tablet fa-2x"></i>
+                            <i class="fa fa-keyboard fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Fully Responsive</h4>
+                            <h4>Designing Data Collection Strategies</h4>
                             <p>
-                                Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum
+                                We help identify the right data points to collect, choose suitable collection methods, and develop user-friendly tools. Throughout the process, we prioritise consistency, data quality and practical use.
                             </p>
                         </div>
                     </div>
@@ -256,14 +301,13 @@
                     <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                         <!--Icon-->
                         <div class="icon">
-                            <i class="fa fa-rocket fa-2x"></i>
+                            <i class="fa fa-laptop fa-2x"></i>
                         </div>
                         <!--Icon Block Description-->
                         <div class="icon-block-description">
-                            <h4>Parallax Effect</h4>
+                            <h4>Implementing Smart Data Systems</h4>
                             <p>
-                                Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
-                                nemore vivendum
+                                We help identify the right data points, choose suitable collection methods, and develop user-friendly tools. We prioritise consistency, data quality and practical use throughout the process.
                             </p>
                         </div>
                     </div>
@@ -277,51 +321,130 @@
         </div>
         <!--End of Content Section-->
         <!--Contact Us-->
-        <section id="contact" class="introduction scrollto">
-            <div class="row no-padding-bottom clearfix">
+        <div id="contact" class="scrollto clearfix">
 
+            <div class="row clearfix">
 
-
-
-
-
-                <div class="col-61">
+                <div class="col-3">
                     <div class="section-heading">
-                        <h3>BELIEVING</h3>
-                        <h2 class="section-title">Focusing On What Matters Most</h2>
-                        <p class="section-subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+                        <h3>WORK WITH US</h3>
+                        <h2 class="section-title">Let's work together!</h2>
+                        <p>
+                            We’d love to hear from you, whether you’re exploring an idea, starting a project, or looking for the right M&E partner.
                         </p>
+                        <form action="https://formspree.io/f/meogzdgv" method="POST">
+                            <span style="font-size:12px">
+                                <label>Name:<br /><input style="width:100%" type="text" name="name" required></label><br /><br />
+                                <label>Organisation:<br /><input style="width:100%" type="text" name="organisation" required></label><br /><br />
+                                <label>Email:<br /><input style="width:100%" type="email" name="_replyto" required></label><br /><br />
+                                <label>How can we help you?<br /><textarea rows="4" style="width:100%" name="message" required></textarea></label><br />
+                                <button type="submit" class="button">Email Us</button>
+                            </span>
+
+                        </form>
+               
                     </div>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt explicabo.
-                    </p>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!
-                    </p>
-                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                    <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-                        WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                    </a>
+
                 </div>
 
-                <div class="col-38">
-                    <img src="images/dancer.jpg" alt="Dancer" />
-                </div>
+                <div class="col-2-3">
 
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-hand-holding-heart fa-2x"></i>&nbsp;
+                            <i class="fa fa-arrow-right fa-2x"></i>&nbsp;
+                            <i class="fa fa-clipboard-list fa-2x"></i>&nbsp;
+                            <i class="fa fa-arrow-right fa-2x"></i>&nbsp;
+                            <i class="fa fa-keyboard fa-2x"></i>&nbsp;
+                            <i class="fa fa-arrow-right fa-2x"></i>&nbsp;
+                            <i class="fa fa-laptop fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>End to End Support</h4>
+                            <p>
+                                We offer full-cycle support, from clarifying your Theory of Change to designing and implementing a real-time data system that supports learning, reporting and accountability.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-people-group fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>
+                               Specialist Support (on retainer) 
+                            </h4>
+                            <p>
+                                We work alongside your internal team / chosen M&amp;E provider to strengthen a specific area of your monitoring and evaluation practice, offering expert input on a flexible, ongoing basis.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-scale-balanced fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>External Evaluations</h4>
+                            <p>
+                                We conduct independent evaluations to assess the impact of your work, providing credible, evidence-based insights for funders, partners and learning.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-comments fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Get in touch</h4>
+                            <p>
+                                <ul style="list-style-type:none; padding-left:0;">
+                                    <li>
+                                        <a target="_blank" title="Whatsapp" href="https://wa.me/+27609880017">
+                                            <i class="fa fa-brands fa-whatsapp fa-1x"></i><b>&nbsp;&nbsp;+27 (0)60 988 0017</b>
+                                        </a><br /><br />
+                                    </li>
+                                    <li>
+                                        <a target="_blank" title="Telephone" href="tel:+27609880017">
+                                            <i class="fa fa-phone fa-1x"></i><b>&nbsp;&nbsp;+27 (0)60 988 0017</b>
+                                        </a><br /><br />
+                                    </li>
+                                    <li>
+                                        <script>
+                                  
+                                            const postfix = "web";
+ 
+                                            const display = user + "." + postfix + "@" + domain;
+                                            document.write('<a target="_blank" title="Email" href="mailto:' + email + '"><i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;<b>' + display + '</b></a> ');
+                                        </script><br /><br />
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                </div>
 
             </div>
 
 
-
-
-        </section>
-        <!--End of Pricing Tables-->
+        </div>
+        <!--End of Contact Us-->
 
     </main>
     <!--End Main Content Area-->
