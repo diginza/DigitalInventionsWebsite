@@ -1533,12 +1533,18 @@ blockquote {
 /* Legal pages */
 
 .legal-page {
-    padding: 70px 0;
+    padding: 35px 0 55px;
 }
 
 .legal-page-header {
-    padding: 30px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.legal-page .row,
+.legal-page-header .row {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .legal-page-header img {
