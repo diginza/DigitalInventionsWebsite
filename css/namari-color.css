@@ -330,6 +330,12 @@ h6 {
     color:#999;
 }
 
+#landing-footer .footer-links a {
+    color:#A0BB40;
+    font-size:14px;
+    font-weight:700;
+}
+
 /* Footer Icon Color */
 
 #landing-footer i {
