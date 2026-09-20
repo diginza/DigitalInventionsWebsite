@@ -297,7 +297,7 @@ h6 {
 
 /* Button Text */
 
-#banner .button {
+#banner .button, #contact button.button {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:16px;
     color:#111;
@@ -306,14 +306,14 @@ h6 {
 
 /* Button Color */
 
-#banner .button {
+#banner .button, #contact button.button {
     border-color:#111;
 }
 
 
 /* Button Hover Color */
 
-#banner .button:hover {
+#banner .button:hover, #contact button.button:hover {
     color:#A0BB40;
     border-color:#A0BB40;
 }

@@ -2406,3 +2406,133 @@ blockquote {
 
 
 
+
+/* Mission Assets: retain existing icon-block typography and brand colour. */
+#about .mission-assets-intro p {
+    margin-bottom: 8px;
+}
+#about .mission-asset-column {
+    padding-top: 8px;
+}
+#about .mission-asset-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0 0 15px;
+    line-height: 25px;
+}
+#about .mission-asset-list li::marker {
+    color: #A0BB40;
+}
+
+/* How We Help uses the same compact introduction and icon columns. */
+#approach .help-intro p {
+    margin-bottom: 8px;
+}
+#approach .help-column {
+    padding-top: 8px;
+}
+
+#approach .help-column .icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#approach .help-icon-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #A0BB40;
+    line-height: 1;
+}
+#approach .help-column .icon i {
+    line-height: 1;
+}
+
+/* Our Work organisation types use the existing body font and green bullets. */
+#services .organisation-types {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 36px;
+    padding-left: 20px;
+    list-style: disc;
+    line-height: 25px;
+}
+#services .organisation-types li::marker {
+    color: #A0BB40;
+}
+@media (max-width: 767px) {
+    #services .organisation-types {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Case studies: green category, then black client and assignment names. */
+#services .case-study-category {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 0;
+}
+#services .case-study-category i {
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    align-self: center;
+}
+#services .case-study-category h3 {
+    color: #A0BB40;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+#services .case-study-heading {
+    padding-bottom: 0;
+}
+#services .case-study-client {
+    color: #111;
+    margin: 0 0 4px;
+    padding: 0;
+}
+#services .case-study-assignment {
+    font-size: 15px;
+    color: #111;
+    margin: 0 0 15px;
+}
+
+#services .case-study-category + .icon-block-description {
+    padding-top: 12px;
+}
+
+/* Tighten the gap from the contact separator to the two columns. */
+#contact > .row > .col-1 .section-heading {
+    padding-bottom: 0;
+}
+#contact > .row > .col-1 .section-title {
+    padding-bottom: 0;
+}
+#contact > .row > .col-1 {
+    padding-bottom: 0;
+}
+
+/* Consistent spacing above each home-page content section, including mobile. */
+#content > .scrollto > .row {
+    padding-top: 25px !important;
+}
+#content > #contact > .row {
+    padding-bottom: 25px !important;
+}
+
+/* Match the hero link button while retaining native form submission. */
+#contact button.button {
+    background: transparent;
+    border-radius: 0;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+/* Give case-study text a little more separation on wider screens. */
+@media (min-width: 768px) {
+    #services article.icon-block {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
