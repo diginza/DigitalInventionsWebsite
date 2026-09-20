@@ -2563,3 +2563,13 @@ blockquote {
         margin-top: 20px;
     }
 }
+
+/* Inline enquiry links share the same cue and hover treatment. */
+a.enquiry-link i {
+    margin-left: 8px;
+    font-size: 0.8em;
+}
+a.enquiry-link:hover,
+a.enquiry-link:focus-visible {
+    color: #333;
+}

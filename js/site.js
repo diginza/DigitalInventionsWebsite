@@ -36,6 +36,17 @@ $(document).ready(function () {
 		$('#header').stickyNavbar();
 	}
 
+	/* Keep Home highlighted over the hero, including mobile navigation. */
+	function updateHomeNavigation() {
+		var banner = document.getElementById('banner');
+		var header = document.getElementById('header');
+		if (!banner || !header) return;
+		var homeActive = banner.getBoundingClientRect().bottom > header.offsetHeight;
+		$('#header nav a[href="#banner"]').toggleClass('active', homeActive);
+	}
+	$(window).on('scroll resize load', updateHomeNavigation);
+	updateHomeNavigation();
+
 	$('#content').waypoint(function (direction) {
 		if (direction === 'down') {
 			$('#header').addClass('nav-solid fadeInDown');

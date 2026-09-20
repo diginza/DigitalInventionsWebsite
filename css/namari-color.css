@@ -341,3 +341,28 @@ h6 {
 #landing-footer i {
     color:#999;
 }
+
+/* Content links darken on hover; navigation retains its green state. */
+#content a:hover,
+#content a:focus-visible,
+#landing-footer a:hover,
+#landing-footer a:focus-visible {
+    color: #333;
+}
+#header nav a {
+    color: #333;
+}
+#header nav a:hover,
+#header nav a:focus-visible,
+#header nav a.active {
+    color: #A0BB40;
+    border-color: #A0BB40;
+}
+
+/* Header contact icons use the navigation hover colour. */
+#header .social-icons a:hover,
+#header .social-icons a:hover i,
+#header .social-icons a:focus-visible,
+#header .social-icons a:focus-visible i {
+    color: #A0BB40;
+}
