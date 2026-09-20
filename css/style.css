@@ -2438,13 +2438,20 @@ blockquote {
     gap: 12px;
 }
 #approach .help-icon-label {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color: #A0BB40;
-    line-height: 1;
+    letter-spacing: 2px;
+    line-height: 1.4;
 }
 #approach .help-column .icon i {
-    line-height: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    flex-shrink: 0;
+    align-self: center;
+}
+#approach .help-column .icon-block-description {
+    padding-top: 12px;
 }
 
 /* Our Work organisation types use the existing body font and green bullets. */
@@ -2534,5 +2541,25 @@ blockquote {
     #services article.icon-block {
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+/* Mobile service spacing: keep each contact link with its copy. */
+@media (max-width: 767px) {
+    #approach .help-column .icon-block-description > p:nth-last-child(2) {
+        margin-bottom: 6px;
+    }
+    #approach .help-column .icon-block-description > p:last-child {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #approach .help-column + .help-column {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    #approach .help-intro + .help-column {
+        margin-top: 20px;
     }
 }
