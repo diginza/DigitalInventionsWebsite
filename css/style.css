@@ -2573,3 +2573,21 @@ a.enquiry-link:hover,
 a.enquiry-link:focus-visible {
     color: #333;
 }
+
+/* Digital Tools: two-thirds copy and one-third phone illustration. */
+#action-weaver .digital-tools-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    #action-weaver .digital-tools-copy,
+    #action-weaver .digital-tools-image {
+        width: 100%;
+    }
+    #action-weaver .digital-tools-image img {
+        max-width: 280px;
+    }
+}
