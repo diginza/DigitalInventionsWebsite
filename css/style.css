@@ -2591,3 +2591,20 @@ a.enquiry-link:focus-visible {
         max-width: 280px;
     }
 }
+
+/* Mission Assets funnel follows all three asset lists on mobile only. */
+#about .mission-funnel-mobile {
+    display: none;
+}
+@media (max-width: 767px) {
+    #about .mission-funnel-mobile {
+        display: block;
+        clear: both;
+        padding-top: 16px;
+    }
+    #about .mission-funnel-mobile img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
